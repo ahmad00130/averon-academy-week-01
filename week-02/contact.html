@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Ahmad">
+  <title>Contact | Ahmad</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="logo">Ahmad<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#goals">Goals</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section contact-page">
+    <h1 class="page-title fade-up">Let's talk</h1>
+    <p class="page-sub fade-up delay-1">
+      Have a project, an opportunity, or just want to say hello? Send me a message.
+    </p>
+
+    <div class="contact-layout">
+      <form id="contact-form" class="card form fade-up delay-2">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit" class="btn">Send message</button>
+        <p class="form-note">This opens your email app with the message ready to send.</p>
+      </form>
+
+      <aside class="card contact-info fade-up delay-3">
+        <h3>Find me online</h3>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:atmbunambal320@gmail.com">atmbunambal320@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/ahmad00130" target="_blank" rel="noopener">ahmad00130</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/ahmad-muhammad-88b878394/" target="_blank" rel="noopener">My profile</a></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Ahmad. Built with HTML, CSS &amp; a little JavaScript.</p>
+  </footer>
+
+</body>
+</html>
