@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Greeting App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <button id="themeButton" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <p id="clock" class="clock"></p>
+    <h1 id="greeting">Welcome!</h1>
+    <p id="timeMessage" class="subtitle"></p>
+
+    <label for="nameInput">Enter your name</label>
+    <input type="text" id="nameInput" maxlength="30" placeholder="e.g. Ahmad">
+    <p id="charCount" class="char-count">0 / 30</p>
+
+    <label for="languageSelect">Greeting language</label>
+    <select id="languageSelect">
+      <option value="english">English</option>
+      <option value="hausa">Hausa</option>
+      <option value="yoruba">Yoruba</option>
+      <option value="igbo">Igbo</option>
+      <option value="french">French</option>
+      <option value="spanish">Spanish</option>
+    </select>
+
+    <div class="main-buttons">
+      <button id="greetButton">Greet Me</button>
+      <button id="clearButton" class="secondary">Clear</button>
+    </div>
+    <p id="errorMessage" class="error"></p>
+
+    <div class="extras">
+      <button id="colorButton" class="secondary">Change Background</button>
+      <button id="dateButton" class="secondary">Show Date</button>
+      <button id="quoteButton" class="secondary">Quote</button>
+    </div>
+
+    <p id="dateDisplay" class="date"></p>
+    <p id="quoteDisplay" class="quote"></p>
+
+    <section class="history">
+      <h2>Recent greetings</h2>
+      <ul id="historyList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
