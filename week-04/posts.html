@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posts Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Posts Explorer</h1>
+    <p>Browse posts fetched live from the JSONPlaceholder API</p>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search posts by title..."
+        aria-label="Search posts by title"
+      />
+      <select id="userFilter" aria-label="Filter by user">
+        <option value="all">All users</option>
+      </select>
+      <button id="reloadBtn" type="button">Reload</button>
+    </section>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+
+    <section id="postsContainer" class="posts"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
